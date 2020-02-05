@@ -1,0 +1,27 @@
+descriptor-schema-version: "2.7"
+info:
+  name: "IOx FileHosting"
+  author-link: "http://www.cisco.com"
+  author-name: "Flo Pachinger"
+  description: "SMB (Port 445) & Nginx (Port 80) File Server"
+  version: "1.0"
+
+app:
+  #cpuarch: "x86_64"
+  cpuarch: "aarch64"
+  type: "docker"
+  resources:
+    profile: "custom"
+    cpu: "400"
+    disk: "100"
+    memory: "400"
+    network:
+      -
+        interface-name: eth0
+        ports:
+          tcp: ["139", "445"]
+          udp: ["137", "138"]
+
+  startup:
+    rootfs: rootfs.tar
+    target: ["/entrypoint.sh"]
