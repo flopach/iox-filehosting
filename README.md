@@ -86,7 +86,7 @@ You may edit the configuration files:
 
 Build the package file (.tar) for your IOx device. Open a terminal where you cloned the repository.
 
-#####Docker native (IOx 2.0)
+**Docker native (IOx 2.0)**
 
 The docker runtime runs on the IOx device. You don not need the ioxclient for packaging.
 
@@ -95,7 +95,7 @@ Computer:iox-filehosting$ docker build -t iox-filehosting .
 Computer:iox-filehosting$ docker save iox-filehosting > iox-filehosting_dockernative.tar
 ```
 
-#####IOx classic (IOx 1.9 and earlier)
+**IOx classic (IOx 1.9 and earlier)**
 
 The package will be built with a Dockerfile (and Docker image) and the ioxclient will package it to an IOx application.
 
@@ -110,7 +110,7 @@ Before installing the IOx app on some devices you need to configure some network
 
 For further information please visit the [IOx Documentation](https://developer.cisco.com/docs/iox).
 
-#####Example: Configuration with IOS XE (IR1101)
+**Example: Configuration with IOS XE (IR1101)**
 
 > Also visit the documentation page: [IOx Application Hosting on IR1101](https://www.cisco.com/c/en/us/td/docs/routers/access/1101/software/configuration/guide/b_IR1101config/b_IR1101config_chapter_010001.html)
 
