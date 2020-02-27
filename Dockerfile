@@ -33,6 +33,6 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 # open ports
-EXPOSE 137/UDP 138/UDP 139/TCP 445/TCP 80/TCP
+EXPOSE 137/UDP 138/UDP 139/TCP 445/TCP 5000/TCP
 
 ENTRYPOINT "/entrypoint.sh"

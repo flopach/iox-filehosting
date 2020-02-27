@@ -3,7 +3,7 @@ info:
   name: "IOx FileHosting"
   author-link: "http://www.cisco.com"
   author-name: "Flo Pachinger"
-  description: "SMB (Port 445) & Nginx (Port 80) File Server"
+  description: "SMB (Port 445) & Nginx (Port 5000) File Server"
   version: "1.0"
 
 app:
@@ -19,7 +19,7 @@ app:
       -
         interface-name: eth0
         ports:
-          tcp: ["139", "445"]
+          tcp: ["139", "445", "5000"]
           udp: ["137", "138"]
 
   startup:
